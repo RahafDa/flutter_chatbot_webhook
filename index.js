@@ -1,4 +1,3 @@
-// ملف: index.js
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -24,3 +23,4 @@ app.post('/webhook', (req, res) => {
 // ✅ تغيير المنفذ ليأخذه من البيئة أو الافتراضي 3000
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Webhook يعمل على المنفذ ${PORT}`));
+
